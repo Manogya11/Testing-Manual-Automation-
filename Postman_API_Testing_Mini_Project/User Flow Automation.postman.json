@@ -1,0 +1,220 @@
+{
+	"id": "2b923bea-324d-4cd0-be61-64472f0f0b45",
+	"name": "User Flow Automation",
+	"timestamp": "2025-11-25T15:20:15.091Z",
+	"collection_id": "46961371-a2ad86d4-9d58-4d76-a0cf-ebdcc8c145f2",
+	"folder_id": 0,
+	"environment_id": "46961371-c4437e67-07ee-4599-98c1-d818e4817dab",
+	"totalPass": 8,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-11-25T15:20:11.713Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "7d5bac0d-f71e-4bcc-ae36-a6ac560769d0",
+			"name": "Login(Extract Token)",
+			"url": "https://reqres.in/api/login",
+			"time": 285,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response has valid JSON body": true,
+				"Response JSON has 'token' property": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has valid JSON body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON has 'token' property": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				285
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response has valid JSON body": true,
+					"Response JSON has 'token' property": true
+				}
+			]
+		},
+		{
+			"id": "dbc9849d-aec3-42f5-9ec4-4efffcb29776",
+			"name": "Create User",
+			"url": "https://reqres.in/api/users",
+			"time": 290,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				290
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "34396d9e-6ea2-486c-94c8-3b142b9ae535",
+			"name": "Update User",
+			"url": "https://reqres.in/api/users/240",
+			"time": 313,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				313
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "ec08e9bf-0176-46c8-8d4c-113ed14a87dc",
+			"name": "Adding Field",
+			"url": "https://reqres.in/api/users/2/240",
+			"time": 301,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				301
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "38323a55-1f26-4276-a92c-c02031a160bd",
+			"name": "Getting User",
+			"url": "https://reqres.in/api/users/2",
+			"time": 108,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				108
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "8ae12932-6d73-40a7-bae7-5e64f17f66b8",
+			"name": "Deleting User",
+			"url": "https://reqres.in/api/users/240",
+			"time": 313,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				313
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1610,
+	"collection": {
+		"requests": [
+			{
+				"id": "7d5bac0d-f71e-4bcc-ae36-a6ac560769d0",
+				"method": "POST"
+			},
+			{
+				"id": "dbc9849d-aec3-42f5-9ec4-4efffcb29776",
+				"method": "POST"
+			},
+			{
+				"id": "34396d9e-6ea2-486c-94c8-3b142b9ae535",
+				"method": "PUT"
+			},
+			{
+				"id": "ec08e9bf-0176-46c8-8d4c-113ed14a87dc",
+				"method": "PATCH"
+			},
+			{
+				"id": "38323a55-1f26-4276-a92c-c02031a160bd",
+				"method": "GET"
+			},
+			{
+				"id": "8ae12932-6d73-40a7-bae7-5e64f17f66b8",
+				"method": "DELETE"
+			}
+		]
+	}
+}
